@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Mascotas</title>
+    <link rel="stylesheet" href="css/estilosf.css">
+    <style>
+        body {
+            background-image: url('img/fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulario de Nuevos Artistas 🎤 </h1>
+            <p> Si conoces de algun artista que hayamos olvidado o que quisieras conocer la proxima, no olvides llenar el siguiente formulario. 🎶</p>
+        </header>
+        <main>
+            <form action="">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Artista:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: L-Gante, Bhavi, " required>
+                </div>
+
+                <div class="form-group">
+                    <label for="especie">Genero:</label>
+                    <select id="especie" name="especie" required>
+                        <option value="">Selecciona una genero</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Trap">Trap</option>
+                        <option value="Regueton">Regueton</option>
+                        <option value="Cumbia">Cumbia</option>
+                        <option value="Nacional">Nacional</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pais">País:</label>
+                    <input type="text" id="pais" name="pais" placeholder="Ej: Bolivia, Argentina, ...">
+                </div>
+
+                <div class="form-group">
+                    <label>Tipo:</label>
+                    <div class="gender-group">
+                        <input type="radio" id="solista" name="genero" value="solista" required>
+                        <label for="macho">Solista</label>
+                        <input type="radio" id="grupo" name="genero" value="grupo" required>
+                        <label for="grupo">Grupo</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="observaciones">Observaciones:</label>
+                    <textarea id="observaciones" name="observaciones" placeholder="Alguna condición especial, personalidad, etc."></textarea>
+                </div>
+            <center>
+                <button type="submit">Registrar a mi Artista</button>
+                <button type="reset">Limpiar datos</button>
+            </center>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

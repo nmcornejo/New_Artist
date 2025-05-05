@@ -1,0 +1,55 @@
+.navbar-nav .nav-link {
+    color: #29F25B;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #94F2AB;
+}
+
+h1 {
+    color: #29F25B;
+    text-align: left;
+    padding-left: 10px;
+}
+
+p {
+    padding-left: 10px;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+.btn-verde-agua:hover {
+    /* Puedes definir un color diferente para el hover si lo deseas */
+    background-color: #5EF283 !important;
+    border-color: #5EF283 !important;
+    color: #307040;
+}
+
+h5 {
+    text-align: center;
+}
+
+.card .card-img-top {
+    object-fit: cover;
+    height: 500px; /* Define una altura fija para las imágenes */
+}
+
+/* Estilos por defecto para el iframe del carrusel (móviles y pantallas pequeñas) */
+.carousel-item iframe {
+    display: block; /* Asegura que sea un elemento de bloque para el ancho */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    max-height: 300px; /* Altura máxima para móviles (ajusta según necesites) */
+    margin: 0 auto; /* Centra horizontalmente en pantallas pequeñas */
+}
+
+/* Estilos para pantallas medianas y grandes (escritorio) */
+@media (min-width: 768px) {
+    .carousel-item iframe {
+        width: 800px; /* Ancho deseado para escritorio (ajusta según necesites) */
+        height: 450px; /* Alto deseado para escritorio (ajusta según necesites) */
+        max-height: none; /* Elimina la restricción de altura para escritorio */
+        margin: 0 auto; /* Centra horizontalmente en escritorio */
+    }
+}
